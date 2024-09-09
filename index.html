@@ -89,7 +89,7 @@
     <h1 class="about fw-bold text-uppercase text-center" id="head-about">About Me</h1>
     <hr>
     <h5><span>Name: </span>Kapuramani Soren</h5>
-    <h5><span>Age: </span> 22</h5>
+    <h5><span>Age: </span> 23+</h5>
     <h5><span>Hobbies: </span>Singing, Arts and Crafts, Listening Instrumental Musics, Books Reading</h5>
     <h5><span>Interests: </span> Outdoor games(Shotput,Discuss, Javelin)</h5>
     <h5><span>Qualification: </span> B.Tech</h5>
@@ -268,24 +268,26 @@
     <hr>
     <div class="container">
       <h1 class="fw-bold text-center">Connect with me</h1>
-      <p class="text-center">Feel free to get in touch with me.
-      </p>
-
+      <p class="text-center">Feel free to get in touch with me.</p>
     </div>
     <div class="contain">
       <div class="contact-box">
         <div class="left"></div>
         <div class="right">
           <h2>Contact Through</h2>
-          <input type="text" class="field" placeholder="Your Name">
-          <input type="text" class="field" placeholder="Your Email">
-          <input type="text" class="field" placeholder="Phone">
-          <textarea placeholder="Message" class="field"></textarea>
-          <button class="btn fw-bold fs-5">Send</button>
+          <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="a54b8914-5a33-4eee-9f1b-73934b5211cb">
+            <input type="text" class="field" name="name" placeholder="Your Name" required>
+            <input type="email" class="field" name="email" placeholder="Your Email" required>
+            <input type="text" class="field" name="phone" placeholder="Phone">
+            <textarea name="message" class="field" placeholder="Message" required></textarea>
+            <button type="submit" class="btn fw-bold fs-5">Send</button>
+          </form>
         </div>
       </div>
     </div>
   </div>
+  
   <!--contact section ends-->
 
 
